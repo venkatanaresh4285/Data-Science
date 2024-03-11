@@ -1,0 +1,4 @@
+fd=open('Hello.txt','r')
+txt=fd.read()
+print(txt)
+fd.close()
