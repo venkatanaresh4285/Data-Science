@@ -1,0 +1,4 @@
+fd=open('Idle.txt','r')
+txt1=fd.read()
+print(txt1)
+fd.close()
