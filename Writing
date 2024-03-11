@@ -1,0 +1,3 @@
+fd=open('Data1.txt','w')
+fd.write('Hello welcoem to gfg it providess lot of resources for interview preparation')
+fd.close()
