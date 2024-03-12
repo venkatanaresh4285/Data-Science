@@ -22,3 +22,9 @@ print(txt)
 #we can find the length of this text and number of items in the text
 len(txt)
 len(txt.split('\n'))
+
+
+#We can also read by using 
+file1=open('inventory.txt','r')
+products=file1.read().split('\n')
+file1.close()
