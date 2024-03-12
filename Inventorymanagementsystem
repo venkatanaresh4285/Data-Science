@@ -17,3 +17,8 @@ print(txt)
 1,'milk',12,100
 2,'choco',14,200
 3,'hello',12,140
+
+
+#we can find the length of this text and number of items in the text
+len(txt)
+len(txt.split('\n'))
