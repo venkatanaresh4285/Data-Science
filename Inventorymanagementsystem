@@ -1,0 +1,19 @@
+#for writing the file we use open('something.txt','w') 
+file1=open('inventory.txt','w')
+file1.close()
+#we can write some details in markdown seciton and open the file from the path and fill the details and save it and we can read the file context
+# Product:
+1.Product Id
+2.Name
+3.Price
+4.Quantity
+#we can read the file context
+file1=open('inventory.txt','r')
+file1.read()
+file1.close()
+
+print(txt)
+#it will be printed like this:
+1,'milk',12,100
+2,'choco',14,200
+3,'hello',12,140
