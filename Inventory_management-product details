@@ -1,0 +1,38 @@
+#Create a file using w -write
+fd=open('inven.txt','w')
+fd.close()
+Products
+1.Product id 2.Name of the product 3.Price 4.Quantity
+
+#reading a file
+
+fd=open('inven.txt','r')
+products=fd.read().split('\n')
+fd.close()
+
+#print the products
+for i in products:
+    print(i)
+
+#output
+4285,Milk,120,200
+4290,Choco,150,120
+4291,Biscuit,120,100
+4274,Dall,112,102
+
+#bill generating 
+
+ui_id=input("Enter product id")
+ui_qn=input("Enter the quantity ")
+
+for product in products:
+    prod_details=product.split(',')
+    if(product.split(',')[0]==ui_id):
+
+        print("------------------------------------")
+        print("Name of Product: ", prod_details[1])
+        print("Price Of Product: ",prod_details[2])
+        print("Quantity of Product ",ui_qn)
+        print("-------------------------------")
+        print("Total Billing amount : ",int(ui_qn)*int(prod_details[2]))
+
