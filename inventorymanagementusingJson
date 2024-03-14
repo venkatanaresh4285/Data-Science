@@ -1,0 +1,65 @@
+record={
+    4285:{"Name":'5-Star',"PRICE":150,"Quantity":100},
+    4290:{"Name":'Milkybar',"PRICE":120,"Quantity":80},
+    4291:{"Name":'Milkybar',"PRICE":180,"Quantity":120},
+    4274:{"Name":'Choclate',"PRICE":120,"Quantity":80},
+    4273:{"Name":'Cool Drinks',"PRICE":99,"Quantity":120},
+    4272:{"Name":'Shakes',"PRICE":180,"Quantity":110}
+}
+#printing record
+print(record,end=" ")
+
+#output
+{4285: {'Name': '5-Star', 'PRICE': 150, 'Quantity': 100}, 4290: {'Name': 'Milkybar', 'PRICE': 120, 'Quantity': 80}, 4291: {'Name': 'Milkybar', 'PRICE': 180, 'Quantity': 120}, 
+4274: {'Name': 'Choclate', 'PRICE': 120, 'Quantity': 80}, 4273: {'Name': 'Cool Drinks', 'PRICE': 99, 'Quantity': 120}, 4272: {'Name': 'Shakes', 'PRICE': 180, 'Quantity': 110}} 
+
+record
+#output
+{4285: {'Name': '5-Star', 'PRICE': 150, 'Quantity': 100},
+ 4290: {'Name': 'Milkybar', 'PRICE': 120, 'Quantity': 80},
+ 4291: {'Name': 'Milkybar', 'PRICE': 180, 'Quantity': 120},
+ 4274: {'Name': 'Choclate', 'PRICE': 120, 'Quantity': 80},
+ 4273: {'Name': 'Cool Drinks', 'PRICE': 99, 'Quantity': 120},
+ 4272: {'Name': 'Shakes', 'PRICE': 180, 'Quantity': 110}}
+
+record[4285]
+#output
+{'Name': '5-Star', 'PRICE': 150, 'Quantity': 100}
+
+record[4291]
+#output
+{'Name': 'Milkybar', 'PRICE': 180, 'Quantity': 120}
+record[4290]['Name']
+#o/p
+'Milkybar'
+
+#Bill generator
+print("----------------MENU---------------------------")
+
+for key in record.keys():
+    print(key,":",record[key]['Name'] ,"--",record[key]['PRICE'],"--",record[key]['Quantity'])
+print("-----------------------------------------------")
+ur_pd=int(input("Enter  Product id :"))
+ur_qn=int(input("Enter  Quantity   :"))
+print(record[ur_pd])
+print('-------------------------------------------------')
+print("Name             : ",record[ur_pd]['Name'])
+print("Quantity         : ",ur_qn)
+print("Price Of Product : ",ur_qn*record[ur_pd]["PRICE"])
+
+#output
+----------------MENU---------------------------
+4285 : 5-Star -- 150 -- 100
+4290 : Milkybar -- 120 -- 80
+4291 : Milkybar -- 180 -- 120
+4274 : Choclate -- 120 -- 80
+4273 : Cool Drinks -- 99 -- 120
+4272 : Shakes -- 180 -- 110
+-----------------------------------------------
+Enter  Product id :4290
+Enter  Quantity   :2
+{'Name': 'Milkybar', 'PRICE': 120, 'Quantity': 80}
+-------------------------------------------------
+Name             :  Milkybar
+Quantity         :  2
+Price Of Product :  240
