@@ -42,10 +42,12 @@ print("-----------------------------------------------")
 ur_pd=int(input("Enter  Product id :"))
 ur_qn=int(input("Enter  Quantity   :"))
 print(record[ur_pd])
-print('-------------------------------------------------')
+print('--------------BILL---------------------------')
 print("Name             : ",record[ur_pd]['Name'])
 print("Quantity         : ",ur_qn)
-print("Price Of Product : ",ur_qn*record[ur_pd]["PRICE"])
+print("Price Of Product (Rs) : ",record[ur_pd]["PRICE"])
+print("---------------BILLING-------------------------")
+print("Billing Amount is (Rs): ",ur_qn*record[ur_pd]["PRICE"])
 
 #output
 ----------------MENU---------------------------
@@ -59,7 +61,9 @@ print("Price Of Product : ",ur_qn*record[ur_pd]["PRICE"])
 Enter  Product id :4290
 Enter  Quantity   :2
 {'Name': 'Milkybar', 'PRICE': 120, 'Quantity': 80}
--------------------------------------------------
+--------------BILL---------------------------
 Name             :  Milkybar
 Quantity         :  2
-Price Of Product :  240
+Price Of Product (Rs) :  120
+---------------BILLING-------------------------
+Billing Amount is (Rs):  240
